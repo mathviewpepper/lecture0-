@@ -4,20 +4,21 @@
 		<title> My Webpage! </title>
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<style>
+			%message, #Katarina_image {
+				background-color: black;
+				display: block;
+				margin: 0 auto;
+				width: 50%;
+				height: auto;
+				padding: 1px;
+		  }
 			#Katarina_Tag {
-					color: #820000;
-					text-align:center;
-					font-size: 40px;
-					font-weight: bold;
+				@extend %message;
+				color: #820000;
+				text-align:center;
+				font-size: 40px;
+				font-weight: bold;
 			}
-			#Katarina_Tag, #Katarina_image {
-					background-color: black;
-					display: block;
-					margin: 0 auto;
-					width: 50%;
-					height: auto;
-					padding: 1px;
-		  	}
 			img {
 				width: 90%;
 				border: 10px dotted #820000;
@@ -36,9 +37,6 @@
 			.centered, #top_of_page {
 				display: block;
 				text-align:center;
-			}
-			ol > li {
-				color: green;
 			}
 			ol > li {
 				color: green;
