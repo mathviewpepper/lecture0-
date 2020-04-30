@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<title> My Webpage! </title>
 		<style>
-			#Katarina_Tag, #Katarina_image {
+			#Katarina_Tag {
 					color: #820000;
 					text-align:center;
 					font-size: 40px;
 					font-weight: bold;
+			}
+			#Katarina_Tag, #Katarina_image {
 					background-color: black;
 					display: block;
 					margin: 0 auto;
 					width: 50%;
 					height: auto;
-					padding: 10px;
-			}
-
+					padding: 1px;
+		  }
 			img {
-				border: 10px dotted #820000;
 				width: 90%;
+				border: 10px dotted #820000;
+				display: block;
+				margin: 15px auto;
 			}
-
 			.bold {
 				color: blue;
 			}
-
 			.middle {
 				display: block;
 				text-align:center;
 				font-size: 20px;
 				padding: 10px;
 			}
-
 			.centered, #top_of_page {
 				display: block;
 				text-align:center;
 			}
-
 			ol > li {
 				color: green;
 			}
-
+			ol > li {
+				color: green;
+			}
 			input, [type="text"], [type="password"]{
 				background-color: lightgreen;
 			}
-
 			button:hover{
 				background-color: green;
 				font-size: 20px;
@@ -53,30 +52,48 @@
 				color: black;
 				padding: 5px;
 			}
-
 			h2::before{
 				content: "\21d2 "
 			}
-
 			h1::selection {
 				color: red;
 				background: blue;
 			}
-
 			@media print {
 				.screen_only {
 					display: none;
 				}
 			}
-
 			@media (max-width: 1280px) {
 				#tooSmall {
 					background-image: url("universe.png");
+					color: white;
+				}
+				h2::before {
+					content: "This is a"
 				}
 			}
-
+			.grid {
+				background-color: lightgrey;
+				display: grid;
+				margin: 10px auto;
+				padding: 10px;
+				grid-column-gap: 10px;
+				grid-row-gap: 10px;
+				grid-template-columns: auto	auto auto;
+			}
+			.grid-item {
+				background-color: pink;
+				font-size: 20px;
+				color: black;
+				border: 3px dotted purple;
+			}
+			table, tr, td {
+				border: 3px solid blue;
+				border-collapse: collapse;
+				padding: 5px;
+			}
 		</style>
-
 	</head>
 
 	<body>
@@ -90,7 +107,7 @@
 				</audio>
 			</span>
 
-			<h2> This is a headline </h1>
+			<h2> Headline </h1>
 			<h3> This is a headline </h1>
 			<h4> This is a headline </h1>
 			<h5>  <span class="bold">Hello</span> World! </h5>
@@ -120,18 +137,15 @@
 					<button>Submit!</button>
 				</span>
 				<span class="middle">
-					<div>
-						Do u like cats?
-						<input name="Name" type="radio" value="yes"> Yes
-						<input name="Name" type="radio" value="no"> No
-					</div>
+					Do u like cats?
+					<input name="Name" type="radio" value="yes"> Yes
+					<input name="Name" type="radio" value="no"> No
 				</span>
 			</form>
 
 			<div id="Katarina_Tag">
 				<i>Cute Cat</i>
 			</div>
-
 			<div id="Katarina_image">
 				<span class="screen_only">
 					<img src="cutecat.jpg">
@@ -143,6 +157,37 @@
 			<a href="https://www.ard.de">
 				<span class="middle"> See something usefull! ;) </span>
 			</a>
+
+			<div class="grid">
+				<div class="grid-item">content 1</div>
+				<div class="grid-item">content 2</div>
+				<div class="grid-item">content 3</div>
+				<div class="grid-item">content 4</div>
+				<div class="grid-item">content 5</div>
+				<div class="grid-item">content 6</div>
+				<div class="grid-item">content 7</div>
+				<div class="grid-item">content 8</div>
+				<div class="grid-item">content 9</div>
+				<div class="grid-item">content 10</div>
+				<div class="grid-item">content 11</div>
+				<div class="grid-item">content 12</div>
+			</div>
+
+			<table id="table1">
+	  		<tr>
+	    		<th>Firstname</th>
+	    		<th>Lastname</th>
+	  		</tr>
+	  		<tr>
+	    		<td>Peter</td>
+	    		<td>Griffin</td>
+	  		</tr>
+	  		<tr>
+	    		<td>Lois</td>
+	    		<td>Griffin</td>
+	  		</tr>
+			</table>
+
 			<a href="#top_of_page">
 				<span class="centered"> go to the top of the page </span>
 			</a>
