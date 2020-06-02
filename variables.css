@@ -1,0 +1,12 @@
+ul {
+  font-size: 20px;
+  color: darkred; }
+
+ol {
+  font-size: 20px;
+  color: darkred; }
+
+ol > li {
+  color: green; }
+
+/*# sourceMappingURL=variables.css.map */

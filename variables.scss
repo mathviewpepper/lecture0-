@@ -1,0 +1,16 @@
+$color: darkred;
+$font-size: 20px;
+
+ul {
+  font-size: $font-size;
+  color: $color;
+}
+
+ol {
+  font-size: $font-size;
+  color: $color;
+}
+
+ol > li {
+  color: green;
+}
